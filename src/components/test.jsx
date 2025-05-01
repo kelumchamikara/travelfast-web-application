@@ -38,7 +38,7 @@ export default function Test() {
 
             {/* Content Section */}
             <div className="px-4 py-10 md:px-20 md:py-16 text-center md:text-left">
-                <h1 className="text-red-700 text-3xl md:text-6xl font-bold mb-6">
+                <h1 className="text-green-900 text-3xl md:text-6xl font-bold mb-6">
                     Mathugama Express Cab Service
                 </h1>
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-4xl mx-auto md:mx-0">

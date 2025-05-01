@@ -26,6 +26,7 @@ export default function Test() {
                     Cab and Tour <span className="hidden sm:inline"> (Sri Lanka)</span>
                 </h2>
             </div>
+            <h1 className="text-red-700 text-6xl">Hellow...</h1>
         </div>
     );
 }

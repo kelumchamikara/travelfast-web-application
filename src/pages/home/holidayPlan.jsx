@@ -64,6 +64,16 @@ export default function HolidayPlan() {
             title: "Ella Demodara",
             image: "/holidayPlanes/Ella Demodara.jpg",
             description: "Demodara, nestled in Sri Lanka’s hill country, is famous for its unique railway loop and the stunning Nine Arches Bridge. Surrounded by lush greenery, it offers scenic hikes like Ella Rock and captivating views, making it a must-visit destination."
+        },
+        {
+            title: "Nuwara-Eliya",
+            image: "/holidayPlanes/Nuwara-Eliya.jpg",
+            description: "Nuwara Eliya, known as Little England, is a charming hill station in Sri Lanka. With its cool climate, colonial architecture, and scenic landscapes, it offers attractions like Horton Plains, Gregory Lake, and lush tea plantations, making it a top destination."
+        },
+        {
+            title: "Pinnawala",
+            image: "/holidayPlanes/Pinnawala.jpg",
+            description: "Pinnawala, located in Sri Lanka’s Sabaragamuwa Province, is famous for its Elephant Orphanage, home to the world’s largest herd of captive Asian elephants. Visitors can enjoy watching elephants being fed and bathed, making it a must-see wildlife experience."
         }
 
         // Add more locations here if needed...

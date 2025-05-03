@@ -62,7 +62,7 @@ export default function HolidayPlan() {
         },
         {
             title: "Ella Demodara",
-            image: "/holidayPlanes/Ella Demodara.jpg",
+            image: "/holidayPlanes/EllaDemodara.jpg",
             description: "Demodara, nestled in Sri Lanka’s hill country, is famous for its unique railway loop and the stunning Nine Arches Bridge. Surrounded by lush greenery, it offers scenic hikes like Ella Rock and captivating views, making it a must-visit destination."
         },
         {

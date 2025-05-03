@@ -18,7 +18,7 @@ export default function Header() {
                             className="cursor-pointer h-[60px] w-[60px] md:h-[100px] md:w-[100px] rounded-full"
                         />
                         <h2 className="text-white text-xl md:text-3xl font-semibold ml-4">
-                            Cab and Tour <span className="hidden sm:inline">(Sri Lanka)</span>
+                           TRAVEL FAST Cab and Tour <span className="hidden sm:inline">(Sri Lanka)</span>
                         </h2>
                     </div>
 

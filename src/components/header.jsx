@@ -6,7 +6,7 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <div className="w-full min-h-screen bg-white">
+        <div className="w-full bg-white">
             {/* Header */}
             <header className="bg-green-900 w-full py-4 px-4 md:py-6 md:px-10 flex flex-col md:flex-row items-center justify-between relative">
                 {/* Logo and Title */}

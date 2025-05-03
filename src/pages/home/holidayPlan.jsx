@@ -1,32 +1,3 @@
-// export default function HolidayPlan(){
-//     return(
-//         <div>
-//             <h1>sri lanka best locations</h1>
-//             <div>
-//             <div>
-//             <img 
-//                             src="/holidayPlanes/Kandy.jpg" 
-//                             alt="Kandy location"
-//                         />
-//             <p>Discover the sacred Sri Dalada Maligawa, home to the revered Tooth Relic of the Buddha. Nestled in Kandy, this majestic temple blends spiritual serenity, rich history, and stunning architecture—offering a profound cultural experience for every visitor.
-//             </p>
-//             </div>
-//             <div>
-//             <img 
-//                             src="/holidayPlanes/Colombo.jpg" 
-//                             alt="Colombo location"
-//                         />
-//             <p>Colombo, Sri Lanka’s vibrant capital, blends colonial charm with modern life. Explore bustling markets, historic landmarks, lush parks, and golden beaches. With rich culture, diverse cuisine, and lively nightlife, Colombo offers an unforgettable urban experience for every kind of traveler.
-
-//             </p>
-//             </div>
-//             </div>
-//         </div>
-//     )
-// }
-
-
-
 export default function HolidayPlan() {
     const locations = [
         {

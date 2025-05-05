@@ -2,13 +2,27 @@ export default function CustomerHome() {
     return (
         <div className="w-full min-h-screen flex flex-col">
             {/* Full-width top image */}
-            <div className="w-full h-screen">
+            {/* <div className="w-full h-screen">
+                <h1>Visit Sri Lanka the classical way</h1>
                 <img
                     src="/beach.jpeg"
                     alt="Beach"
                     className="w-full h-full object-cover"
                 />
-            </div>
+            </div> */}
+            <div className="relative w-full h-screen">
+    <img
+        src="/beach.jpeg"
+        alt="Beach"
+        className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 flex items-center justify-center">
+        <h1 className="text-white text-5xl md:text-6xl font-bold text-center px-4">
+            Visit Sri Lanka the classical <br /> way
+        </h1>
+    </div>
+</div>
+
 
             {/* Our Services Section */}
             <section className="py-12 bg-gray-100 px-4 md:px-16">

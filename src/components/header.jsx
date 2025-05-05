@@ -18,7 +18,7 @@ export default function Header() {
                             className="cursor-pointer h-[70px] w-[70px] md:h-[130px] md:w-[130px] rounded-full"
                         />
                         <h2
-                            className="text-4xl md:text-5xl font-bold italic text-blue-950 drop-shadow-[4px_4px_2px_rgba(0,0,0,0.5)] ml-5"
+                            className="text-3xl md:text-5xl font-bold italic text-blue-950 drop-shadow-[4px_4px_2px_rgba(0,0,0,0.5)] ml-5"
                             style={{ fontFamily: '"Lobster", cursive' }}>
                             D & M TRAVEL FAST
                         </h2>

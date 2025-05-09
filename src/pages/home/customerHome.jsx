@@ -23,7 +23,7 @@ export default function CustomerHome() {
     <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <img src="/poster1.jpeg" alt="poster1" className="w-full h-auto rounded-lg shadow-md" />
         <img src="/airportdrop.jpeg" alt="airportdrop" className="w-full h-auto rounded-lg shadow-md" />
-        <img src="/weddingcar.jpg" alt="weddingcar" className="w-full h-auto rounded-lg shadow-md" />
+        <img src="/weddingposter2.jpg" alt="weddingcar" className="w-full h-auto rounded-lg shadow-md" />
         <img src="/bmw (1).jpg" alt="classiccar" className="w-full h-auto rounded-lg shadow-md" />
     </div>
 </section>

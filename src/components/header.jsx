@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <div className="w-fultext-#4b5aa5">
             {/* Header */}
-            <header className=" w-full py-4 px-4 md:py-6 md:px-10 flex flex-col md:flex-row items-center justify-between relative">
+            <header className=" w-full py-4 px-4 md:py-2 md:px-10 flex flex-col md:flex-row items-center justify-between relative">
                 {/* Logo and Title */}
                 <div className="flex items-center w-full justify-between md:justify-start">
                     <div className="flex items-center">

@@ -28,10 +28,33 @@
 export default function Vehicles() {
     return (
         <div className="bg-white min-h-screen px-4 py-10 md:px-20">
+            {/* Intro Section */}
+            <div className="max-w-4xl mx-auto mb-16">
+                <h1 className="text-3xl md:text-5xl font-bold text-blue-950 mb-4">
+                    Our Vehicles At Your Service
+                </h1>
+                <div className="text-center">
+                <h2 className="text-lg md:text-3xl font-bold text-gray-800 mb-4">
+                    Comfort, Safety, and Reliability in Every Ride
+                </h2>
+                <p className="text-gray-700 mb-2">
+                    At D & M Travel Fast, our diverse fleet is ready to serve your every travel need.
+                </p>
+                <p className="text-gray-700 mb-2">
+                    From comfortable sedans and spacious SUVs to luxury cars, vans, and minibuses, we offer well-maintained vehicles that suit every occasion—
+                    be it daily commutes, business travel, airport transfers, weddings, or long-distance journeys.
+                </p>
+                <p className="text-gray-700 mb-2">
+                    Each vehicle is equipped with modern amenities, regularly serviced for safety,
+                    and driven by professional, courteous chauffeurs committed to delivering a smooth and enjoyable ride.
+                </p>
+                <p className="text-gray-700">
+                    Whatever your destination, our vehicles are at your service—because your journey deserves nothing but the best.
+                </p>
+                </div>
+            </div>
+
             {/* Heading */}
-            <h1 className="text-3xl md:text-5xl font-bold text-center text-green-900 mb-6">
-                Our Vehicles
-            </h1>
             <h2 className="text-xl md:text-2xl font-semibold text-left text-gray-800 mb-10">
                 Vehicle Collections
             </h2>
@@ -113,4 +136,3 @@ export default function Vehicles() {
         </div>
     );
 }
-

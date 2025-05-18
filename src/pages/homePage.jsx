@@ -4,6 +4,7 @@ import CustomerHome from './home/customerHome';
 import Vehicles from './home/vehicles';
 import HolidayPlan from './home/holidayPlan';
 import ContactUs from './home/contactUs';
+import Quote from './home/quote';
 
 export default function HomePage(){
     return(
@@ -15,6 +16,7 @@ export default function HomePage(){
                 <Route path="/vehicles" element={<Vehicles/>}/>
                 <Route path="/holiday" element={<HolidayPlan/>}/>
                 <Route path="/contact" element={<ContactUs/>}/>
+                <Route path="/quote" element={<Quote/>}/>
               </Routes>
               </div>
         </div>

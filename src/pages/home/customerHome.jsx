@@ -99,22 +99,22 @@ const images = [
   {
     src: '/sigiriya2.jpeg',
     alt: 'Sigiriya',
-    title: '',
+    title: 'Rise Above to Discover Timeless Beauty',
   },
   {
     src: '/beach.jpeg',
     alt: 'Beach',
-    title: '',
+    title: 'Relax by Sri Lanka’s Golden Shores',
   },
   {
     src: '/fort galle.jpeg',
     alt: 'Fort Galle',
-    title: '',
+    title: 'Stroll Through Stories of the Past',
   },
   {
     src: '/ninearch.jpeg',
     alt: 'Nine Arch',
-    title: '',
+    title: 'Ride Through Sri Lanka’s Hill Country Magic',
   },
 ];
 
@@ -268,7 +268,7 @@ export default function CustomerHome() {
       </div>
 
       {/* Our Services Section */}
-      <section className="py-12 bg-gray-100 px-4 md:px-16">
+      {/* <section className="py-12 bg-gray-100 px-4 md:px-16">
         <h1 className="text-4xl font-bold mb-8 text-gray-800 text-left">Our Services</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <img src="/poster1.jpeg" alt="poster1" className="w-full h-auto rounded-lg shadow-md" />
@@ -276,7 +276,7 @@ export default function CustomerHome() {
           <img src="/weddingposter2.jpg" alt="weddingcar" className="w-full h-auto rounded-lg shadow-md" />
           <img src="/bmw (1).jpg" alt="classiccar" className="w-full h-auto rounded-lg shadow-md" />
         </div>
-      </section>
+      </section> */}
 
       {/* About Sri Lanka Section */}
       <section className="py-20 px-4 md:px-24 bg-white">
@@ -293,6 +293,99 @@ export default function CustomerHome() {
           </div>
         </div>
       </section>
+
+      {/* <div className="max-w-5xl mx-auto px-4 py-10">
+            <h2 className="text-4xl font-bold text-center mb-10">Our Services</h2>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+                <img
+                    src="/poster1.jpeg"  
+                    alt="poster1"
+                    className="rounded-xl shadow-lg w-full md:w-1/2"
+                />
+                <div className="text-center md:text-left">
+                    <h3 className="text-xl font-extrabold mb-3">
+                        Experience Travel Like Never Before – Comfort, Safety & Style Combined
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                        At D&M Travel Fast, we redefine road travel by offering a premium and comfortable transportation service tailored to your needs. Whether you're planning a family vacation, a corporate trip, or a weekend getaway, our fleet of modern, well-maintained vehicles ensures a smooth, relaxing, and enjoyable journey every time.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <img src="/airportdrop.jpeg" alt="airportdrop" className="w-full h-auto rounded-lg shadow-md" /> */}
+        <div className="max-w-5xl mx-auto px-4 py-10">
+    <h2 className="text-4xl font-bold text-center mb-10">Our Services</h2>
+
+    {/* Existing Service Section */}
+    <div className="flex flex-col md:flex-row items-center justify-center gap-10 mb-16">
+        <img
+            src="/poster1.jpeg"
+            alt="poster1"
+            className="rounded-xl shadow-lg w-full md:w-1/2"
+        />
+        <div className="text-center md:text-left">
+            <h3 className="text-xl font-extrabold mb-3">
+                Experience Travel Like Never Before – Comfort, Safety & Style Combined
+            </h3>
+            <p className="text-gray-700 leading-relaxed">
+                At D&M Travel Fast, we redefine road travel by offering a premium and comfortable transportation service tailored to your needs. Whether you're planning a family vacation, a corporate trip, or a weekend getaway, our fleet of modern, well-maintained vehicles ensures a smooth, relaxing, and enjoyable journey every time.
+            </p>
+        </div>
+    </div>
+
+    {/* Airport Drop & Pickup Section */}
+    <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+        <img
+            src="/airportdrop.jpeg"
+            alt="airportdrop"
+            className="rounded-xl shadow-lg w-full md:w-1/2"
+        />
+        <div className="text-center md:text-left">
+            <h3 className="text-xl font-extrabold mb-3">
+                Airport Drop & Pickup – On-Time, Every Time
+            </h3>
+            <p className="text-gray-700 leading-relaxed">
+                Travel stress-free with D&M Travel Fast’s reliable airport pickup and drop services.
+                Whether you're arriving after a long flight or heading to the airport for a departure,
+                our punctual and professional drivers ensure you reach your destination comfortably and on time.
+                <br /><br />
+                We track your flight in real-time to adjust for delays and guarantee timely service.
+                Our clean, air-conditioned vehicles provide a smooth ride, and our courteous chauffeurs assist with
+                luggage and ensure a hassle-free experience from start to finish.
+                <br /><br />
+                Book in advance and enjoy peace of mind knowing your airport transfer is in safe hands.
+            </p>
+        </div>
+    </div>
+    {/* Wedding Car Rental Section */}
+<div className="flex flex-col md:flex-row items-center justify-center gap-10 mt-16">
+    <img
+        src="/weddingposter2.jpg"
+        alt="weddingposter"
+        className="rounded-xl shadow-lg w-full md:w-1/2"
+    />
+    <div className="text-center md:text-left">
+        <h3 className="text-xl font-extrabold mb-3">
+            Wedding Car Rental – Arrive in Style on Your Special Day
+        </h3>
+        <p className="text-gray-700 leading-relaxed">
+            Make your big day even more unforgettable with D&M Travel Fast’s premium wedding car rental service.
+            Choose from our fleet of elegant, chauffeur-driven vehicles designed to add a touch of class and comfort
+            to your wedding celebration.
+            <br /><br />
+            Whether you prefer a classic luxury car or a stylish modern ride, we offer beautifully maintained vehicles
+            decorated to match your wedding theme. Our professional drivers ensure a smooth, punctual, and graceful
+            arrival—so you can focus on making memories while we handle the ride.
+            <br /><br />
+            Celebrate love with style, comfort, and sophistication—book your wedding car today!
+        </p>
+    </div>
+</div>
+
+</div>
+
+
 
     </div>
   );

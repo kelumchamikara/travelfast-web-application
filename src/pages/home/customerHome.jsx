@@ -87,6 +87,7 @@
 
 'use client';
 
+import { useNavigate } from 'react-router-dom';
 import { useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -119,6 +120,7 @@ const images = [
 ];
 
 export default function CustomerHome() {
+  const navigate = useNavigate();
   const [current, setCurrent] = useState(0);
   const touchStartX = useRef(null);
   const touchEndX = useRef(null);
@@ -158,20 +160,6 @@ export default function CustomerHome() {
 
   return (
     <div className="w-full min-h-screen flex flex-col">
-
-      {/* Hero Section */}
-      {/* <div className="relative w-full h-screen">
-        <img
-          src="/beach.jpeg"
-          alt="Beach"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-5xl md:text-6xl font-bold text-center px-4">
-            Visit Sri Lanka the classical <br /> way
-          </h1>
-        </div>
-      </div> */}
 
       {/* Carousel Section */}
       <div className="w-full bg-white py-10 px-4">
@@ -267,17 +255,6 @@ export default function CustomerHome() {
         </div>
       </div>
 
-      {/* Our Services Section */}
-      {/* <section className="py-12 bg-gray-100 px-4 md:px-16">
-        <h1 className="text-4xl font-bold mb-8 text-gray-800 text-left">Our Services</h1>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <img src="/poster1.jpeg" alt="poster1" className="w-full h-auto rounded-lg shadow-md" />
-          <img src="/airportdrop.jpeg" alt="airportdrop" className="w-full h-auto rounded-lg shadow-md" />
-          <img src="/weddingposter2.jpg" alt="weddingcar" className="w-full h-auto rounded-lg shadow-md" />
-          <img src="/bmw (1).jpg" alt="classiccar" className="w-full h-auto rounded-lg shadow-md" />
-        </div>
-      </section> */}
-
       {/* About Sri Lanka Section */}
       <section className="py-20 px-4 md:px-24 bg-white">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-12">
@@ -294,26 +271,7 @@ export default function CustomerHome() {
         </div>
       </section>
 
-      {/* <div className="max-w-5xl mx-auto px-4 py-10">
-            <h2 className="text-4xl font-bold text-center mb-10">Our Services</h2>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-                <img
-                    src="/poster1.jpeg"  
-                    alt="poster1"
-                    className="rounded-xl shadow-lg w-full md:w-1/2"
-                />
-                <div className="text-center md:text-left">
-                    <h3 className="text-xl font-extrabold mb-3">
-                        Experience Travel Like Never Before – Comfort, Safety & Style Combined
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                        At D&M Travel Fast, we redefine road travel by offering a premium and comfortable transportation service tailored to your needs. Whether you're planning a family vacation, a corporate trip, or a weekend getaway, our fleet of modern, well-maintained vehicles ensures a smooth, relaxing, and enjoyable journey every time.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <img src="/airportdrop.jpeg" alt="airportdrop" className="w-full h-auto rounded-lg shadow-md" /> */}
+      
         <div className="max-w-5xl mx-auto px-4 py-10">
     <h2 className="text-4xl font-bold text-center mb-10">Our Services</h2>
 
@@ -385,7 +343,15 @@ export default function CustomerHome() {
 
 </div>
 
-
+          {/* Get a Quote Button */}
+      <div className="flex justify-center mb-20">
+        <button
+          onClick={() => navigate('/quote')}
+          className="bg-black hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 flex items-center gap-2"
+        >
+          Get a Quote <ChevronRight size={18} />
+        </button>
+      </div>
 
     </div>
   );

@@ -25,7 +25,15 @@
 //     )
 // }
 
+import { useNavigate } from 'react-router-dom';
+
 export default function Vehicles() {
+    const navigate = useNavigate();
+
+    const handleBook = () => {
+        navigate('/vehiclebook');
+    };
+
     return (
         <div className="bg-white min-h-screen px-4 py-10 md:px-20">
             {/* Intro Section */}
@@ -34,23 +42,23 @@ export default function Vehicles() {
                     Our Vehicles At Your Service
                 </h1>
                 <div className="text-center">
-                <h2 className="text-lg md:text-3xl font-bold text-gray-800 mb-4">
-                    Comfort, Safety, and Reliability in Every Ride
-                </h2>
-                <p className="text-gray-700 mb-2">
-                    At D & M Travel Fast, our diverse fleet is ready to serve your every travel need.
-                </p>
-                <p className="text-gray-700 mb-2">
-                    From comfortable sedans and spacious SUVs to luxury cars, vans, and minibuses, we offer well-maintained vehicles that suit every occasion—
-                    be it daily commutes, business travel, airport transfers, weddings, or long-distance journeys.
-                </p>
-                <p className="text-gray-700 mb-2">
-                    Each vehicle is equipped with modern amenities, regularly serviced for safety,
-                    and driven by professional, courteous chauffeurs committed to delivering a smooth and enjoyable ride.
-                </p>
-                <p className="text-gray-700">
-                    Whatever your destination, our vehicles are at your service—because your journey deserves nothing but the best.
-                </p>
+                    <h2 className="text-lg md:text-3xl font-bold text-gray-800 mb-4">
+                        Comfort, Safety, and Reliability in Every Ride
+                    </h2>
+                    <p className="text-gray-700 mb-2">
+                        At D & M Travel Fast, our diverse fleet is ready to serve your every travel need.
+                    </p>
+                    <p className="text-gray-700 mb-2">
+                        From comfortable sedans and spacious SUVs to luxury cars, vans, and minibuses, we offer well-maintained vehicles that suit every occasion—
+                        be it daily commutes, business travel, airport transfers, weddings, or long-distance journeys.
+                    </p>
+                    <p className="text-gray-700 mb-2">
+                        Each vehicle is equipped with modern amenities, regularly serviced for safety,
+                        and driven by professional, courteous chauffeurs committed to delivering a smooth and enjoyable ride.
+                    </p>
+                    <p className="text-gray-700">
+                        Whatever your destination, our vehicles are at your service—because your journey deserves nothing but the best.
+                    </p>
                 </div>
             </div>
 
@@ -61,77 +69,27 @@ export default function Vehicles() {
 
             {/* Vehicle Cards */}
             <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-                {/* Aqua Vehicle */}
-                <div className="bg-gray-50 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <img 
-                        src="/vehicles/Aqua.jpeg" 
-                        alt="Aqua"
-                        className="w-full"
-                    />
-                    <div className="p-4 text-center">
-                        <h3 className="text-lg font-semibold text-green-900">Book Our Aqua Car</h3>
+                {[
+                    { name: "Aqua", image: "/vehicles/Aqua.jpeg", label: "Book Our Aqua Car" },
+                    { name: "KDH", image: "/vehicles/KDH.jpeg", label: "Book Our KDH Flatroof Van" },
+                    { name: "Allion", image: "/vehicles/Allion.jpeg", label: "Book Our Allion Car" },
+                    { name: "BMW", image: "/vehicles/BMW.jpg", label: "Book Our BMW Car" },
+                    { name: "Coaster", image: "/vehicles/Coaster.jpeg", label: "Book Our Coaster Bus" },
+                    { name: "Fit Shuttle", image: "/vehicles/Fit Shuttle.jpeg", label: "Book Our Fit Shuttle Car" },
+                ].map((vehicle, index) => (
+                    <div key={index} className="bg-gray-50 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <img src={vehicle.image} alt={vehicle.name} className="w-full" />
+                        <div className="p-4 text-center">
+                            <h3 className="text-lg font-semibold text-green-900">{vehicle.label}</h3>
+                            <button
+                                onClick={handleBook}
+                                className="mt-4 bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300"
+                            >
+                                Book Now
+                            </button>
+                        </div>
                     </div>
-                </div>
-
-                {/* KDH Vehicle */}
-                <div className="bg-gray-50 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <img 
-                        src="/vehicles/KDH.jpeg" 
-                        alt="KDH"
-                        className="w-full"
-                    />
-                    <div className="p-4 text-center">
-                        <h3 className="text-lg font-semibold text-green-900">Book Our KDH Flatroof Van</h3>
-                    </div>
-                </div>
-
-                {/* Allion Vehicle */}
-                <div className="bg-gray-50 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <img 
-                        src="/vehicles/Allion.jpeg" 
-                        alt="Allion"
-                        className="w-full"
-                    />
-                    <div className="p-4 text-center">
-                        <h3 className="text-lg font-semibold text-green-900">Book Our Allion Car</h3>
-                    </div>
-                </div>
-
-                {/* BMW Vehicle */}
-                <div className="bg-gray-50 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <img 
-                        src="/vehicles/BMW.jpg" 
-                        alt="BMW"
-                        className="w-full"
-                    />
-                    <div className="p-4 text-center">
-                        <h3 className="text-lg font-semibold text-green-900">Book Our BMW Car</h3>
-                    </div>
-                </div>
-
-                {/* Coaster Vehicle */}
-                <div className="bg-gray-50 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <img 
-                        src="/vehicles/Coaster.jpeg" 
-                        alt="Coaster"
-                        className="w-full"
-                    />
-                    <div className="p-4 text-center">
-                        <h3 className="text-lg font-semibold text-green-900">Book Our Coaster Bus</h3>
-                    </div>
-                </div>
-
-                {/* Fit Shuttle Vehicle */}
-                <div className="bg-gray-50 shadow-md rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    <img 
-                        src="/vehicles/Fit Shuttle.jpeg" 
-                        alt="Fit Shuttle"
-                        className="w-full"
-                    />
-                    <div className="p-4 text-center">
-                        <h3 className="text-lg font-semibold text-green-900">Book Our Fit Shuttle Car</h3>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );

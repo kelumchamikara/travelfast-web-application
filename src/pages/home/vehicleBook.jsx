@@ -337,8 +337,8 @@ export default function VehicleBook() {
     e.preventDefault();
 
     emailjs.send(
-      "service_d4epbux",
-      "template_rd2uhng",
+      "service_bl8d0iq",
+      "template_8dzde6i",
       {
         full_name: form.fullName,
         address: form.address,
@@ -348,7 +348,7 @@ export default function VehicleBook() {
         end_date: form.endDate,
         vehicle: form.vehicle,
       },
-      "zCoqXjqZ_Ks7vZLwn"
+      "hpNR_PGhCpS7-55hI"
     )
     .then(() => {
       alert("Booking details sent successfully!");

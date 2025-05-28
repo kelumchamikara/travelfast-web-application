@@ -107,7 +107,7 @@ export default function ContactUs() {
                 <div className="bg-white/10 backdrop-blur-lg p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl w-full max-w-lg space-y-6">
                     <div>
                         <h3 className="text-lg sm:text-xl font-semibold text-green-300 mb-1">Email Address</h3>
-                        <p className="text-lime-500 text-sm sm:text-2xl">travelfast999@gmail.com</p>
+                        <p className="text-lime-500 text-sm sm:text-2xl">travelfast351@gmail.com</p>
                     </div>
 
                     <div>

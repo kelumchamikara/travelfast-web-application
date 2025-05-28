@@ -434,7 +434,7 @@ export default function CustomerHome() {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col">
+    <div className="w-full min-h-screen flex flex-col ">
 
       {/* Dynamic Title for Current Image */}
       <div className="text-center">

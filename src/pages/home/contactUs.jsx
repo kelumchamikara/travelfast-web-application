@@ -202,7 +202,7 @@ export default function ContactUs() {
                 <div className="w-full max-w-5xl h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-xl border-4 border-white">
                     <iframe
                         title="Our Location on Google Map"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.6458827051!2d79.9209473!3d6.8993776!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2575e735b14f7%3A0x2b3ac5123bbd1ce2!2sLiyanage%20Mawatha%201st%20Cross%20Road%20%26%20Circular%20Road%2C%20Sri%20Jayawardenepura%20Kotte%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1716905019476!5m2!1sen!2slk"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8712635171164!2d79.89237007475688!3d6.90599409309338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259004cb32121%3A0xb30efc496d75259b!2sLiyanage%20Mawatha%2C%20Nawala%20Road%2C%20Rajagiriya!5e0!3m2!1sen!2slk!4v1748454552520!5m2!1sen!2slk"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}

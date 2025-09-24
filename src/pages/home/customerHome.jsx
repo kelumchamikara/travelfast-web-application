@@ -4,30 +4,39 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import RuwanwaliMahaSaya from '../../assets/homeimage/ruwanweli maha seya.jpeg';
+import Sigiriya from '../../assets/homeimage/sigiriya2.jpeg';
+import Beach from '../../assets/homeimage/beach.jpeg';
+import FortGalle from '../../assets/homeimage/fort galle.jpeg';
+import NineArch from '../../assets/homeimage/ninearch.jpeg';
+import Galle from '../../assets/homeimage/galle fort.jpg';
+import Poster1 from '../../assets/homeimage/poster1.jpeg';
+import AirPort from '../../assets/homeimage/airportdrop.jpeg';
+import WeddingPoster from '../../assets/homeimage/weddingposter2.jpg';
 
 const images = [
   {
-    src: '/ruwanweli maha seya.jpeg',
+    src: RuwanwaliMahaSaya,
     alt: 'Ruwanweli Maha Seya',
     title: 'Visit Sri Lanka The Classical Way',
   },
   {
-    src: '/sigiriya2.jpeg',
+    src: Sigiriya,
     alt: 'Sigiriya',
     title: 'Rise Above to Discover Timeless Beauty',
   },
   {
-    src: '/beach.jpeg',
+    src: Beach,
     alt: 'Beach',
     title: 'Relax by Sri Lanka’s Golden Shores',
   },
   {
-    src: '/fort galle.jpeg',
+    src: Galle,
     alt: 'Fort Galle',
     title: 'Stroll Through Stories of the Past',
   },
   {
-    src: '/ninearch.jpeg',
+    src: NineArch,
     alt: 'Nine Arch',
     title: 'Ride Through Sri Lanka’s Hill Country Magic',
   },
@@ -227,7 +236,7 @@ export default function CustomerHome() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/poster1.jpeg" alt="poster1" className="rounded-xl shadow-lg w-full md:w-1/2" />
+          <img src={Poster1} alt="poster1" className="rounded-xl shadow-lg w-full md:w-1/2" />
           <div className="text-center md:text-left">
             <h3 className="text-xl font-extrabold mb-3">
               Experience Travel Like Never Before – Comfort, Safety & Style Combined
@@ -248,7 +257,7 @@ export default function CustomerHome() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/airportdrop.jpeg" alt="airportdrop" className="rounded-xl shadow-lg w-full md:w-1/2" />
+          <img src={AirPort} alt="airportdrop" className="rounded-xl shadow-lg w-full md:w-1/2" />
           <div className="text-center md:text-left">
             <h3 className="text-xl font-extrabold mb-3">
               Airport Drop & Pickup – On-Time, Every Time
@@ -275,7 +284,7 @@ export default function CustomerHome() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/weddingposter2.jpg" alt="weddingposter" className="rounded-xl shadow-lg w-full md:w-1/2" />
+          <img src={WeddingPoster} alt="weddingposter" className="rounded-xl shadow-lg w-full md:w-1/2" />
           <div className="text-center md:text-left">
             <h3 className="text-xl font-extrabold mb-3">
               Wedding Car Rental – Arrive in Style on Your Special Day

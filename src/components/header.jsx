@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // Optional: You can use any icon library
+import Logo from '../assets/homeimage/logo.png'; // Adjust the path as necessary
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ export default function Header() {
                 <div className="flex items-center w-full justify-between md:justify-start">
                     <div className="flex items-center">
                         <img 
-                            src="/logo.png" 
+                            src= {Logo}
                             alt="Mathugama Express Logo"
                             className="cursor-pointer h-[90px] w-[90px] md:h-[130px] md:w-[130px] rounded-full"
                         />
@@ -50,7 +51,7 @@ export default function Header() {
                 {/* Mobile Menu */}
                 {mobileMenuOpen && (
                     <nav className="flex flex-col w-full mt-4 md:hidden rounded-lg p-4 space-y-2">
-                        <Link to="/" onClick={() => setMobileMenuOpen(false)} className="text-#4b5aa5 text-base font-medium hover:text-yellow-300 transition">Home</Link>
+                        <Link to="/travelfast-web-application" onClick={() => setMobileMenuOpen(false)} className="text-#4b5aa5 text-base font-medium hover:text-yellow-300 transition">Home</Link>
                         <Link to="/vehicles" onClick={() => setMobileMenuOpen(false)} className="text-#4b5aa5 text-base font-medium hover:text-yellow-300 transition">Vehicles</Link>
                         <Link to="/holiday" onClick={() => setMobileMenuOpen(false)} className="text-#4b5aa5 text-base font-medium hover:text-yellow-300 transition">Holiday Plan</Link>
                         <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="text-#4b5aa5 text-base font-medium hover:text-yellow-300 transition">Contact Us</Link>

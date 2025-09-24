@@ -12,7 +12,7 @@ export default function HomePage(){
         <div>
             <Header/>
             <div className='w-full h-[calc(100vh-100px)]'>
-              <Routes path="/">
+              <Routes >
                 <Route path="/" element={<CustomerHome/>}/>
                 <Route path="/vehicles" element={<Vehicles/>}/>
                 <Route path="/holiday" element={<HolidayPlan/>}/>

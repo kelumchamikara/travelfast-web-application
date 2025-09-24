@@ -2,6 +2,7 @@
 
 import { Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Galle from '../../assets/homeimage/fort galle.jpeg'
 
 export default function ContactUs() {
     return (
@@ -10,7 +11,7 @@ export default function ContactUs() {
             <div className="relative w-full min-h-screen font-sans">
                 {/* Background Image */}
                 <img
-                    src="/sigiriya.jpg"
+                    src={Galle}
                     alt="Galle Fort"
                     className="absolute inset-0 w-full h-full object-cover brightness-75 z-0"
                 />

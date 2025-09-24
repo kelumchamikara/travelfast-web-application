@@ -3,6 +3,13 @@
 import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
+import KDH from '../../assets/vehicles/KDH.jpeg';
+import Allion from '../../assets/vehicles/Allion.jpeg';
+import BMW from '../../assets/vehicles/BMW.jpg';
+import Coaster from '../../assets/vehicles/Coaster.jpeg';
+import Aqua from '../../assets/vehicles/Aqua.jpeg';
+import FitShuttle from '../../assets/vehicles/Fit Shuttle.jpeg';
+import KDH2 from '../../../public/vehicles/KDH.jpeg';
 
 export default function VehicleBook() {
   const [form, setForm] = useState({
@@ -18,11 +25,11 @@ export default function VehicleBook() {
   const [isLoading, setIsLoading] = useState(false);
 
   const vehicles = [
-    { name: "Toyota KDH", img: "/vehicles/KDH.jpeg" },
-    { name: "Toyota Allion", img: "/vehicles/Allion.jpeg" },
-    { name: "BMW", img: "/vehicles/BMW.jpg" },
+    { name: "Toyota KDH", img: {KDH2} },
+    { name: "Toyota Allion", img: "../../assets/vehicles/Allion.jpeg" },
+    { name: "BMW", img: "../../../public/vehicles/BMW.jpg" },
     { name: "Toyota Coaster Mini Bus", img: "/vehicles/Coaster.jpeg" },
-    { name: "Toyota Aqua", img: "/vehicles/Aqua.jpeg" },
+    { name: "Toyota Aqua", img: "/Allion.jpeg" },
     { name: "Honda Fit Shuttle", img: "/vehicles/Fit Shuttle.jpeg" },
   ];
 

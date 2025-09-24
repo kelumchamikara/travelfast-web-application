@@ -1,5 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Aqua from "../../assets/vehicles/Aqua.jpeg";
+import KDH from "../../assets/vehicles/KDH.jpeg";
+import Allion from "../../assets/vehicles/Allion.jpeg";
+import BMW from "../../assets/vehicles/BMW.jpg";
+import Coaster from "../../assets/vehicles/Coaster.jpeg";
+import FitShuttle from "../../assets/vehicles/Fit Shuttle.jpeg";
 
 export default function Vehicles() {
     const navigate = useNavigate();
@@ -54,12 +60,12 @@ export default function Vehicles() {
             {/* Vehicle Cards */}
             <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 {[
-                    { name: "Aqua", image: "/vehicles/Aqua.jpeg", label: "Book Our Aqua Car" },
-                    { name: "KDH", image: "/vehicles/KDH.jpeg", label: "Book Our KDH Flatroof Van" },
-                    { name: "Allion", image: "/vehicles/Allion.jpeg", label: "Book Our Allion Car" },
-                    { name: "BMW", image: "/vehicles/BMW.jpg", label: "Book Our BMW Car" },
-                    { name: "Coaster", image: "/vehicles/Coaster.jpeg", label: "Book Our Coaster Bus" },
-                    { name: "Fit Shuttle", image: "/vehicles/Fit Shuttle.jpeg", label: "Book Our Fit Shuttle Car" },
+                    { name: "Aqua", image: Aqua, label: "Book Our Aqua Car" },
+                    { name: "KDH", image: KDH, label: "Book Our KDH Flatroof Van" },
+                    { name: "Allion", image: Allion, label: "Book Our Allion Car" },
+                    { name: "BMW", image: BMW, label: "Book Our BMW Car" },
+                    { name: "Coaster", image: Coaster, label: "Book Our Coaster Bus" },
+                    { name: "Fit Shuttle", image: FitShuttle, label: "Book Our Fit Shuttle Car" },
                 ].map((vehicle, index) => (
                     <motion.div
                         key={index}
@@ -86,4 +92,3 @@ export default function Vehicles() {
         </div>
     );
 }
-
